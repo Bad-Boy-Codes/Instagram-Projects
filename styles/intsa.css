@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  background: rgb(142,142,215);
+background: linear-gradient(90deg, rgba(142,142,215,1) 27%, rgba(8,200,238,1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+input {
+    background-color: rgba(142,142,215,1);
+    border-radius: 10px;
+    border: none;
+    box-shadow: rgba(142,142,215,1);
+    color: white;
+    font-family: inherit;
+    font-size: 3rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+input:focus {
+    outline: none;
+}
+
+.card {
+   background: rgb(142,142,215);
+background: linear-gradient(90deg, rgba(142,142,215,1) 27%, rgba(8,200,238,1) 100%);
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+        0 15px 40px rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding: 2rem;
+    width: 664px;
+    max-width: 800px;
+}
+
+.avatar {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+.user-info {
+    color: #eee;
+    margin-left: 2rem;
+}
+.user-info a {
+  font-size: 20px;
+}
+.user-info .username {
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+    margin-top: 0;
+}
+.user-info .username:hover{
+  text-decoration: underline;
+}
+
+.user-info ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    max-width: 400px;
+}
+
+.user-info ul li {
+    display: flex;
+    align-items: center;
+}
+
+.user-info ul li strong {
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
