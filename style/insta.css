@@ -15,7 +15,8 @@ input {
   width: 80%;
   margin: auto;
   position: relative;
-  margin-bottom: 80px;  animation: fadeInUp 0.9s;
+  margin-bottom: 80px;
+  animation: fadeInUp 0.9s;
 }
 
 input::placeholder {
