@@ -14,7 +14,7 @@ function createUserCard(user) {
     const cardHTML = `
 <div class="card">
    <div>
-      <img class="avatar" src="${user.profile_pic}" alt="${user.username}" />
+      <img class="avatar" src="https://popcat.xyz/ig/pfp/${user.username}" alt="${user.username}" />
    </div>
    <div class="user-info">
       <a class="username" href="https://instagram.com/${user.username}">${user.username}</a>
