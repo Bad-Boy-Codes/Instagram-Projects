@@ -4,7 +4,7 @@ const main = document.getElementById("main");
 const search = document.getElementById("search");
 
 async function getUser(username) {
-    const resp = await fetch(`https://popcat.xyz/ig?user=${encodeURIComponent(username.toLowerCase())}`);
+    const resp = await fetch(`https://badboy.is-a.dev/api/json/instauser?username=${encodeURIComponent(username.toLowerCase())}`);
     const respData = await resp.json();
     createUserCard(respData);
 }
@@ -13,9 +13,10 @@ function createUserCard(user) {
   if(user.error) return main.innerHTML = "<h2>User not found</h2>"
     const cardHTML = `
 <div class="card">
-      <img class="avatar" src="https://popcat.xyz/ig/pfp/${user.username}" alt="${user.username}" href="https://popcat.xyz/ig/pfp/${user.username}" download />
+<a class="username" href="${user.url}">${user.username}</a>
+      <a download="${user.username}.jpg" href="${user.profile_pic}"><img class="avatar" src="${user.profile_pic}" alt="${user.username}"/></a>
    <div class="user-info">
-      <a class="username" href="https://instagram.com/${user.username}">${user.username}</a>
+      <span>${user.name}</span>
       <p>${user.biography}</p>
       <ul class="info">
          <li>${user.followers.toLocaleString()}<strong>Followers</strong></li>
@@ -30,6 +31,7 @@ function createUserCard(user) {
     main.innerHTML = cardHTML;
 }
 
+getUser("_itz.bad.boy_");
 
 document.getElementById("form").addEventListener("submit", (e) => {
     e.preventDefault();
