@@ -52,7 +52,8 @@ input::placeholder {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  float: left;
+  width: 20%;
   border-radius: 50%;
 }
 
@@ -64,6 +65,11 @@ input::placeholder {
 .user-info p {
   padding: 10%;
   align-content: center;
+  margin-top: -7%;
+}
+.user-info span{
+  position: relative;
+  padding: 10%;
 }
 .user-info a, .username {
   color: #ccc;
@@ -74,7 +80,6 @@ input::placeholder {
   color: #ccc;
   text-decoration: none;
   margin-top: 10% ;
-  margin-bottom: 10%px;
 }
 .username:hover ,user-info a {
   text-decoration: underline;
@@ -84,4 +89,22 @@ input::placeholder {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
+  max-width: 40%;
+  margin-left: 30%;
+  margin-top:-5%;
+}
+
+@media screen and (max-width: 767px) {
+  .avatar {
+    float: none;
+    width:80%;
   }
+  .user-info ul {
+    margin-top:0;
+  max-width: 90%;
+    margin-left: 7%;
+}
+  .user-info p {
+    margin-top: 0;
+  }
+}
