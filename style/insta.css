@@ -59,24 +59,24 @@ input::placeholder {
 .user-info {
   justify-items: center;
   color: #eee;
-  margin-left: 2rem;
   align-content: center;
 }
 .user-info p {
   padding: 10%;
   align-content: center;
 }
-.user-info a {
-  font-size: 20px;
+.user-info a, .username {
+  color: #ccc;
+  text-underline-offset: 0.2em;
 }
 .username {
   font-size: 30px;
-  color: white;
+  color: #ccc;
   text-decoration: none;
   margin-top: 10% ;
   margin-bottom: 10%px;
 }
-.username:hover {
+.username:hover ,user-info a {
   text-decoration: underline;
 }
 
@@ -84,7 +84,4 @@ input::placeholder {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-  padding: 0;
-  max-width: 400px;
-  align-items: center;
   }

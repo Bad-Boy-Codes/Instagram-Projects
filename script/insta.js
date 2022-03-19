@@ -16,7 +16,7 @@ function createUserCard(user) {
       <a download="${user.username}.jpg" href="${user.profile_pic}"><img class="avatar" src="${user.profile_pic}" alt="${user.username}"/></a>
    <div class="user-info">
       <span>${user.name}</span>
-      <p>${user.biography}</p>
+      <p>${user.biography + (!user.external_url ? "":`<br/><br/> <a href="${user.external_url}">${user.external_url}</a>`)}</p>
       <ul class="info">
 <li>${user.posts} <strong>Posts</strong></li><li>${user.followers.toLocaleString()} <strong>Followers</strong></li><li>${user.following.toLocaleString()} <strong>Following</strong></li>
       </ul>
