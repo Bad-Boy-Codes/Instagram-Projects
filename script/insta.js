@@ -10,12 +10,10 @@ async function getUser(username) {
 }
 
 function createUserCard(user) {
-  if(user.error) return main.innerHTML = "<h2 style=\"color: white;\">User not found</h2>"
+  if(user.error) return main.innerHTML = "<h2>User not found</h2>"
     const cardHTML = `
 <div class="card">
-   <div>
-      <img class="avatar" src="https://popcat.xyz/ig/pfp/${user.username}" alt="${user.username}" />
-   </div>
+      <img class="avatar" src="https://popcat.xyz/ig/pfp/${user.username}" alt="${user.username}" href="https://popcat.xyz/ig/pfp/${user.username}" download />
    <div class="user-info">
       <a class="username" href="https://instagram.com/${user.username}">${user.username}</a>
       <p>${user.biography}</p>
@@ -31,7 +29,6 @@ function createUserCard(user) {
 
     main.innerHTML = cardHTML;
 }
-
 
 
 document.getElementById("form").addEventListener("submit", (e) => {

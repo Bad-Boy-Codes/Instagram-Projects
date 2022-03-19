@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 input {
   display: block;
   padding: 0.375rem 0.75rem;
@@ -22,30 +22,41 @@ input {
 input::placeholder {
     color: #fff;
 }
-
-.card {
-  position: relative;  animation: fadeInUp 0.9s;
-background-color: #7f5a83;
-background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
-
-    border-radius: 20px;
-    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
-        0 15px 40px rgba(0, 0, 0, 0.1);
-    display: flex;
-    padding: 2rem;
-    width: 80%;
+.card{
+   display: block;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0.3px 0.7px rgba(0, 0, 0, 0.126),
+    0 0.9px 1.7px rgba(0, 0, 0, 0.179), 0 1.8px 3.5px rgba(0, 0, 0, 0.224),
+    0 3.7px 7.3px rgba(0, 0, 0, 0.277), 0 10px 20px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(20px);
+  transition: 0.5s ease;position: relative; 
+  animation: fadeInUp 0.9s;width: 50%;
   margin:auto;
+  height: auto;padding: 2rem;
+  border-radius:20px;
 }
-
+.card:hover {box-shadow: 0 0.7px 1px rgba(0, 0, 0, 0.157),
+      0 1.7px 2.6px rgba(0, 0, 0, 0.224), 0 3.5px 5.3px rgba(0, 0, 0, 0.28),
+      0 7.3px 11px rgba(0, 0, 0, 0.346), 0 20px 30px rgba(0, 0, 0, 0.5);}
+ 
 .avatar {
-    border-radius: 50%;
-    height: 150px;
-    width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  border-radius:50%;
 }
 
 .user-info {
+  justify-items: center;
     color: #eee;
     margin-left: 2rem;
+    align-content:center;
+}
+.user-info p {
+  padding: 10%;
+  align-content: center;
 }
 .user-info a {
   font-size: 20px;
