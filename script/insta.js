@@ -3,7 +3,7 @@ let main = document.getElementById("main"),
     cardHTML = null;
 
 async function getUser(username) {
-    const resp = await fetch(`https://badboy.is-a.dev/api/json/instauser?username=${encodeURIComponent(username.toLowerCase())}`);
+    const resp = await fetch(`https://api.badboy.is-a.dev/json/instauser?username=${encodeURIComponent(username.toLowerCase())}`);
     const respData = await resp.json();
     createUserCard(respData);
 }
